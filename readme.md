@@ -6,3 +6,10 @@
 
 ``` npm i ```
 
+#### Feed data
+
+``` node feed.js ```
+
+#### Similarity search
+
+``` node food_recommendation.js ```
