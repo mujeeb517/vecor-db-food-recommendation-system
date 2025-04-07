@@ -13,7 +13,7 @@ async function generateEmbeddings(texts) {
     return results;
 }
 
-async function feedData() {
+(async function feedData() {
     const uniqueIds = new Set();
     foodItems.forEach((food, index) => {
         while (uniqueIds.has(food.food_id.toString())) {
@@ -37,6 +37,4 @@ async function feedData() {
         documents: foodTexts,
         embeddings: embeddingsData,
     });
-}
-
-module.exports = { feedData };
+})();
